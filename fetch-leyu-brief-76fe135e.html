@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leyu · 信息检索与对照平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f6f7f9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #1e1f24;
+            line-height: 1.65;
+            padding: 0 1.25rem;
+        }
+
+        .wrapper {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 0 4rem;
+        }
+
+        /* ---------- hero ---------- */
+        .hero {
+            margin-bottom: 2.8rem;
+            border-bottom: 2px solid #dde0e6;
+            padding-bottom: 1.5rem;
+        }
+
+        .hero small {
+            display: inline-block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #6b7280;
+            margin-bottom: 0.4rem;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            color: #0b0c0f;
+        }
+
+        .hero p {
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #4a4e57;
+            max-width: 620px;
+        }
+
+        /* ---------- content ---------- */
+        .section-head {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 2.2rem 0 0.6rem;
+            color: #1f2937;
+            letter-spacing: -0.01em;
+        }
+
+        .section-body {
+            margin-bottom: 1.6rem;
+            color: #2d3139;
+        }
+
+        .section-body p {
+            margin-bottom: 0.8rem;
+        }
+
+        .highlight {
+            background: #edeff3;
+            padding: 1rem 1.2rem;
+            border-radius: 6px;
+            font-size: 0.925rem;
+            margin: 1rem 0 1.4rem;
+            border-left: 4px solid #9ca3af;
+        }
+
+        .highlight strong {
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .examples {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin: 0.8rem 0;
+        }
+
+        .examples span {
+            background: #ffffff;
+            border: 1px solid #d8dce3;
+            border-radius: 20px;
+            padding: 0.2rem 0.9rem;
+            font-size: 0.8rem;
+            color: #374151;
+            letter-spacing: 0.2px;
+        }
+
+        .inline-link {
+            color: #1f2937;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #b0b8c4;
+            text-decoration-thickness: 1px;
+            transition: text-decoration-color 0.2s;
+        }
+
+        .inline-link:hover {
+            text-decoration-color: #1f2937;
+        }
+
+        blockquote.faq {
+            margin: 1.2rem 0 0;
+            padding: 0.6rem 0 0.6rem 1.2rem;
+            border-left: 3px solid #c4cbd6;
+            background: transparent;
+        }
+
+        blockquote.faq p {
+            margin: 0 0 0.3rem;
+            font-size: 0.9rem;
+            color: #3b3f4a;
+        }
+
+        blockquote.faq cite {
+            font-size: 0.8rem;
+            color: #6b7280;
+            font-style: normal;
+        }
+
+        /* ---------- footer ---------- */
+        .site-footer {
+            margin-top: 3.6rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #d6dae2;
+            font-size: 0.85rem;
+            color: #6b7280;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .site-footer .note {
+            max-width: 400px;
+        }
+
+        .site-footer .ref {
+            font-size: 0.9rem;
+        }
+
+        .ref a {
+            font-weight: 500;
+        }
+
+        /* ---------- responsive ---------- */
+        @media (max-width: 500px) {
+            .wrapper {
+                padding: 2rem 0 3rem;
+            }
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+            .examples span {
+                font-size: 0.75rem;
+                padding: 0.1rem 0.7rem;
+            }
+            .site-footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- hero -->
+    <div class="hero">
+        <small>· 检索 · 对照 · 延伸</small>
+        <h1>leyu · 查询与参考系统</h1>
+        <p>为需要快速比对、回溯信息以及延伸阅读的使用者设计，聚焦结构化的内容索引与关键词导航。</p>
+    </div>
+
+    <!-- 第一段：日常查询场景 -->
+    <div class="section-head">日常检索与信息锚点</div>
+    <div class="section-body">
+        <p>在日常工作或学习中，我们常常需要在一个集中位置找到相关条目，并快速定位到更详细的说明。<a href="https://fetch-leyu.com.cn" class="inline-link">leyu</a> 将条目与上下文结合，避免在多个页面间来回跳转。无论是术语对照、简短释疑，还是链接汇总，都能通过分层结构直接触及。</p>
+        <p>例如，当你需要确认某个概念的常用译法、查看同一主题下的不同表述，或是想了解某一关键词的常见关联方向，leyu 提供的卡片式信息流能减少梳理成本。它不追求大而全，而是强调“即查即用”。</p>
+    </div>
+
+    <!-- 第二段：对照与归纳 -->
+    <div class="section-head">对照阅读与归纳</div>
+    <div class="section-body">
+        <p>信息之间往往存在隐性的对应关系。leyu 在呈现时会把相近、相反或互为补充的内容安排在邻近位置，方便横向对比。比如在同一分类下并列显示多条摘要，使用者可以快速扫读差异，或是提取共性。</p>
+        <div class="highlight">
+            <strong>典型用法</strong>：将一组概念放在同一模块内，每条附有简短说明与外部参考链接。用户不必自行开多个标签页逐一比对，在 leyu 内部即可完成初步筛选。
+        </div>
+        <p>这种设计更适合需要反复确认细节的场景，如术语表的日常维护、小型团队的知识库索引，或是个人笔记的体系化整理。对照的过程本身就是一种梳理。</p>
+    </div>
+
+    <!-- 第三段：延伸阅读与上下文 -->
+    <div class="section-head">延伸阅读 & 上下文关联</div>
+    <div class="section-body">
+        <p>单一信息点的价值往往受限于上下文。leyu 在展示主条目时，会附带相关主题的摘要链接，使得从“一个词”到“一片知识区域”的过渡更加自然。你不必在看完一条内容后从头搜索，因为关联入口已经内嵌在页面结构中。</p>
+        <p>举例来说，当你在 leyu 中查阅某个方法或工具时，同一区域可能列出其前置条件、常见变体以及相近替代方案。这种线索式的布置降低了信息遗漏的概率，也鼓励更系统的理解。</p>
+        <div class="examples">
+            <span>术语对照</span>
+            <span>版本差异</span>
+            <span>参考来源</span>
+            <span>使用场景</span>
+        </div>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <blockquote class="faq">
+        <p><strong>常见疑问</strong> — leyu 是一个通用查询站点，专注于内容的结构化展示。所有条目均经过整理，不涉及实时数据流或用户生成内容。具体使用方式取决于访问者的需求：你可以将其视作索引页、知识卡片集，或是快速导航工具。</p>
+        <cite>—— 站点概述 · leyu</cite>
+    </blockquote>
+
+    <!-- footer -->
+    <div class="site-footer">
+        <span class="note">本页面为杂志式介绍，内容仅供参考。详细信息请通过 <a href="https://fetch-leyu.com.cn" class="inline-link">leyu</a> 查阅。</span>
+        <span class="ref">· 主题索引 ·</span>
+    </div>
+
+</div>
+</body>
+</html>
